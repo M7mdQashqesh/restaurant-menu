@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cpx \"pages/**/*\" dist/pages && cpx \"style/**/*\" dist/style",
+    "build": "vite build && cpx \"pages/**/*\" dist/pages && cpx \"style/**/*\" dist/style && cpx \"src/**/*\" dist/src",
     "preview": "vite preview"
   },
   "devDependencies": {
