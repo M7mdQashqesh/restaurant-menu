@@ -1,0 +1,204 @@
+:root {
+  --primary-color: rgb(17 20 37);
+  --secondary-color: rgb(32 40 63);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Small Screen */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  width: 120px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+/* Logo */
+
+/* Navbar */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav.header-icons ul {
+  display: flex;
+  align-items: center;
+}
+
+header i {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+/* Navbar */
+/* Header */
+
+/* Varieties */
+.varieties > div.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.varieties >div:first-of-type p {
+  margin-top: 0;
+}
+
+.varieties > div > p {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.varieties .products {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+  .varieties .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+}
+
+.varieties .product {
+  overflow: hidden;
+}
+
+.varieties .product .bg-image {
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
+}
+
+.varieties .product .product-name {
+  color: white;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+.varieties .product .description {
+  color: #aaa;
+  font-size: 12px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.4;
+}
+
+.varieties .product .product-price {
+  color: white;
+  font-weight: bold;
+}
+/* Varieties */
+
+/* Loading */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loading {
+  color: white;
+  font-size: 40px;
+  width: fit-content;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 1s linear infinite;
+}
+
+@media (max-width: 767px) {
+  #loading {
+    margin: 65% auto 0;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+}
+/* Loading */
+
+/* Empty Cafe */
+.empty-cafe {
+  background-color: var(--secondary-color);
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 5px;
+}
+/* Empty Cafe */

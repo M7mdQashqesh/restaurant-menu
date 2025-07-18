@@ -1,0 +1,43 @@
+.container > p {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form > div label {
+  color: #777;
+}
+
+form > div input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px solid gray;
+  font-size: 20px;
+  padding: 8px 8px 8px 0;
+  color: white;
+}
+
+form > button {
+  border: none;
+  outline: none;
+  padding: 15px 0;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 50px 0;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Manage product categories in Our Cafe's dashboard. Add, edit, or delete categories to keep your menu organized and up to date."
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Draze Cafe" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <!-- Title Tag -->
+    <title>Our Cafe | Manage Categories</title>
+    <!-- Font Awesome Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Toastify Library -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="../../style/style.css" />
+    <!-- Manage Categories CSS File -->
+    <link rel="stylesheet" href="../../style/dashboard/manageCategories.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <!-- Go Back -->
+        <i class="fa-solid fa-bars"></i>
+        <!-- Go Back -->
+
+        <!-- Header Nav -->
+        <nav>
+          <ul>
+            <li>
+              <i class="fa-solid fa-xmark"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-upload"></i>
+              <p>Upload Products</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-bars-progress"></i>
+              <p>Manage Products</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-list-check"></i>
+              <p>Manage Categories</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-house"></i>
+              <p>Home Page</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <p>Sign out</p>
+            </li>
+          </ul>
+        </nav>
+        <!-- Header Nav -->
+
+        <!-- Logo -->
+        <div class="logo">
+          <img src="/logo-transperent.png" alt="logo" />
+        </div>
+        <!-- Logo -->
+      </header>
+      <!-- Header -->
+
+      <p>Manage Categories</p>
+
+      <!-- Main -->
+      <main>
+        <button id="add-category-btn">Add Category</button>
+        <div class="categories"></div>
+      </main>
+      <!-- Main -->
+
+      <!-- Loading -->
+      <div id="loading">
+        <i class="fa-solid fa-spinner"></i>
+      </div>
+      <!-- Loading -->
+
+      <!-- Add Category Modal -->
+      <div class="modal" style="display: none">
+        <form>
+          <div>
+            <label for="category-name">Category Name</label>
+            <input
+              type="text"
+              id="category-name"
+              name="categoryName"
+              required
+            />
+          </div>
+          <div class="btns">
+            <input type="submit" value="Add Category" />
+            <button class="cancel-btn">Cancel</button>
+          </div>
+        </form>
+      </div>
+      <!-- Add Category Modal -->
+    </div>
+
+    <!-- Toastify Library -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <!-- Manage Categories JavaScriptFile -->
+    <script
+      src="../../src/dashboard/manageCategories.js"
+      type="module"
+    ></script>
+  </body>
+</html>

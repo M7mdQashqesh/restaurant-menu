@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Log in to your Our Cafe account to manage your orders, view your favorites, and enjoy a faster, more personalized coffee experience."
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Draze Cafe" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <!-- Title Tag -->
+    <title>Our Cafe | Login</title>
+    <!-- Toastify Library -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="../style/style.css" />
+    <!-- Login CSS File -->
+    <link rel="stylesheet" href="../style/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-container">
+        <h2>Login</h2>
+        <form>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter password"
+              required
+            />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <a href="./signup.html">Don't have an account? Register</a>
+      </div>
+    </div>
+
+    <!-- Toastify Library -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <!-- Login JavaScript File -->
+    <script src="../src/login.js" type="module"></script>
+  </body>
+</html>

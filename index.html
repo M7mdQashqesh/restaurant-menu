@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Our Cafe - your cozy destination for premium espresso, handcrafted coffee, and all the caffeine you need. Taste the perfect blend of comfort and energy in every cup."
+    />
+    <meta
+      name="keywords"
+      content="Our Cafe, espresso, coffee, caffeine, specialty coffee, coffee shop, best espresso, iced coffee, cappuccino, latte, coffee beans, café, hot drinks, energy drinks, coffee lovers"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Draze Cafe" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <!-- Title Tag -->
+    <title>Our Cafe | Espresso & All Caffeine You Need</title>
+    <!-- Font Awesome Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <!-- Logo -->
+        <div class="logo">
+          <img src="/logo-transperent.png" alt="logo" />
+        </div>
+        <!-- Logo -->
+
+        <!-- Navbar -->
+        <nav class="header-icons">
+          <ul>
+            <li>
+              <a href="../pages/cart.html"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <li id="login-btn">
+              <a href="../pages/login.html">
+                <i class="fa-solid fa-right-to-bracket"></i>
+              </a>
+            </li>
+            <li id="dashboard-btn">
+              <a href="../pages/dashboard/uploadProduct.html">
+                <i class="fa-solid fa-table-columns"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Header -->
+
+      <!-- Main -->
+      <main>
+        <div class="varieties" id="varieties"></div>
+      </main>
+    </div>
+    <!-- Main -->
+
+    <!-- Loading -->
+    <div id="loading">
+      <i class="fa-solid fa-spinner"></i>
+    </div>
+    <!-- Loading -->
+
+    <!-- Main JavaScript File -->
+    <script src="./src/main.js" type="module"></script>
+  </body>
+</html>

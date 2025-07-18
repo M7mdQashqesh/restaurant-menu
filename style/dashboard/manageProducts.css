@@ -1,0 +1,248 @@
+nav {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+@keyframes show-nav {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+nav.show {
+  animation: show-nav 0.5s forwards;
+}
+
+@keyframes hide-nav {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+nav.hide {
+  animation: hide-nav 0.5s forwards;
+}
+
+nav ul {
+  background-color: white;
+  width: 75%;
+  height: 100dvh;
+  position: relative;
+  padding-top: 60px;
+  left: -100%;
+  transition: left 0.5s ease;
+}
+
+@keyframes show-ul {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+ul.show {
+  animation: show-ul 0.5s forwards;
+}
+
+@keyframes hide-ul {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+ul.hide {
+  animation: hide-ul 0.5s forwards;
+}
+
+nav ul li:first-of-type > i {
+  color: black;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+nav ul li:not(:first-of-type) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+nav ul li:not(:first-of-type) i {
+  color: black;
+  font-size: 18px;
+}
+
+nav ul li p {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.container > p {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Section */
+.product-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.product-div:first-of-type {
+  margin-top: 30px;
+}
+
+.product-div .product-image {
+  background-size: cover;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+}
+
+.product-div .details {
+  flex: 1;
+}
+
+.product-div .details .name-and-trash {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.product-div .details .name-and-trash p {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.product-div .details .name-and-trash i {
+  color: white;
+  font-size: 14px;
+}
+
+.product-div .details .description {
+  color: #777;
+  max-width: 240px;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.price > p {
+  padding: 0;
+  margin: 0;
+}
+
+.empty-products {
+  background-color: var(--secondary-color);
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 5px;
+}
+/* Main Section */
+
+/* Model */
+.delete-model {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+}
+
+.delete-model > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.delete-model > div p {
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.delete-model > div div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.delete-model > div div button {
+  padding: 5px 10px;
+  font-weight: bold;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+/* Model */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loading {
+  color: white;
+  font-size: 40px;
+  width: fit-content;
+  margin: 65% auto 0;
+  animation: spin 1s linear infinite;
+}

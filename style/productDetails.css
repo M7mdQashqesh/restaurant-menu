@@ -1,0 +1,84 @@
+.product-image {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 440px;
+}
+
+.product-name {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.product-description {
+  color: #777;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.quantity > p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.quantity > div {
+  display: flex;
+  gap: 10px;
+}
+
+.quantity > div > button {
+  background: var(--secondary-color);
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 30px;
+  width: 40px;
+}
+
+.quantity > div > input {
+  width: 80px;
+  border: none;
+  outline: none;
+  background: var(--secondary-color);
+  padding: 5px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.price-and-add {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.price-and-add > p.total-price {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.price-and-add > button {
+  padding: 8px 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,115 @@
+.product-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.product-div .product-image {
+  background-size: cover;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+}
+
+.product-div .details {
+  flex: 1;
+}
+
+.product-div .details .name-and-trash {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.product-div .details .name-and-trash p {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.product-div .details .name-and-trash i {
+  color: white;
+  font-size: 14px;
+}
+
+.product-div .details .description {
+  color: #777;
+  max-width: 240px;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.quantity-price {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.quantity-price > p {
+  padding: 0;
+  margin: 0;
+}
+
+.empty-cart {
+  background-color: var(--secondary-color);
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#total-price-for-total-products {
+  background-color: var(--secondary-color);
+  padding: 0 10px 10px;
+  border-radius: 6px;
+  margin-top: 100px;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.sub-total,
+.shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #777;
+}
+
+.sub-total p,
+.shipping p {
+  margin-bottom: 0;
+}
+
+.total-cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.checkout {
+  all: unset;
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
